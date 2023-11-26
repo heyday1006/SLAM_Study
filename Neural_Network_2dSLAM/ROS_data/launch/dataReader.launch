@@ -1,0 +1,7 @@
+<launch>
+   <node name="throttler_range" type="throttle" pkg="topic_tools" args="messages /robot_1/base_scan 10 /robot_1/range_throttled" />
+   <node name="throttler_odom" type="throttle" pkg="topic_tools" args="messages /robot_1/odom 10 /robot_1/odom_throttled" />
+    <node pkg="data_read" type="dataReader.py" name="scan_values" output="screen">
+        
+    </node>
+</launch>

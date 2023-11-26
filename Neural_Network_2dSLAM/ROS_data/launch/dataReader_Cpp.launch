@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="data_read" type="data_read" name="scan_values" output="screen">
+        
+    </node>
+</launch>
