@@ -17,7 +17,7 @@ We use optimization-based compressive sensing technique to reconstruct 2D depth 
 <br />
 We created diverse Gazebo worlds, brought up a Kobuki robot equipped with laser scanners, then used the ROS package on RRT-based map exploration to collect data. 
 
-- We treated the relative pose prediction problem by a multi-task regression model, and loop closure detection problem by a binary classification model.
+- We solved the relative pose prediction problem via a multi-task regression model, and loop closure detection problem via a binary classification model.
 
 - To create the pose regression dataset, we subsample the data to a frequency of {2Hz, 1Hz, 0.5Hz}. In total, there are more than 150k pairs for training+validation+testing (fraction: 0.99x0.85:0.99x0.15:0.01, see training environment) and 30k pairs for extra testing (see testing environment). 
 
